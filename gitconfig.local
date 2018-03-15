@@ -1,0 +1,9 @@
+[alias]
+  cm = commit -m
+  c  = commit
+[diff]
+  mnemonicprefix = true
+[user]
+  name = Nick Weiland
+  email = nickweiland@gmail.com
+  username = weilandia

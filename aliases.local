@@ -1,0 +1,15 @@
+# Nav
+alias dotfiles="cd ~/dotfiles"
+
+# Git
+alias gits='git status -s'
+alias gitc='git cm'
+alias gitcm='git c'
+alias gita='git aa'
+
+# Apps
+alias airbo='open https://github.com/theairbo'
+alias github='open https://github.com/weilandia'
+alias chrome='open -a "Google Chrome"'
+alias slack='open -a "Slack"'
+alias spotify='open -a "Spotify"'
