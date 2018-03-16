@@ -2,7 +2,7 @@
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
 alias work='cd ~/workspace/airbo/hengage; heroku accounts:set airbo'
-alias soup='cd ~/workspace/souptools; heroku accounts:set weilandia'
+alias soup='cd ~/workspace/soup_tools; heroku accounts:set weilandia'
 
 # Git
 alias gits='git status -s'

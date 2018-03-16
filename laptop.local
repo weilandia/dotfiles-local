@@ -1,0 +1,26 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
+cask "slack"
+cask "spotify"
+cask "iterm2"
+cask "google-chrome"
+cask "java8"
+cask "atom"
+cask "firefox"
+
+brew "go"
+brew "ngrok"
+brew "elasticsearch"
+brew "geckodriver"
+brew "chromedriver"
+EOF
+
+fancy_echo "Cleaning up old Homebrew formulae ..."
+brew cleanup
+brew cask cleanup
+
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup
+fi
