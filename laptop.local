@@ -14,12 +14,13 @@ cask "ngrok"
 cask "sourcetree"
 cask "adobe-creative-cloud"
 cask "pg-commander"
+cask "caskroom/versions/java8"
+cask "chromedriver"
 
 brew "go"
 brew "mongodb"
 brew "elasticsearch"
 brew "geckodriver"
-brew "chromedriver"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
