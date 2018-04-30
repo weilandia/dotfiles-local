@@ -18,6 +18,7 @@ cask "mou"
 cask "pg-commander"
 
 brew "go"
+brew "mongodb"
 brew "elasticsearch"
 brew "geckodriver"
 brew "chromedriver"
