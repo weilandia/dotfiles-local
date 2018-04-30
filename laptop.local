@@ -13,7 +13,6 @@ cask "mongodb-compass"
 cask "ngrok"
 cask "sourcetree"
 cask "adobe-creative-cloud"
-cask "mou"
 cask "pg-commander"
 
 brew "go"
