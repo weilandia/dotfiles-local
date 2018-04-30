@@ -1,7 +1,8 @@
 # Nav
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
-alias work='cd ~/workspace/airbo/hengage; heroku accounts:set airbo'
+alias prac='cd ~/workspace'
+alias airbo='cd ~/workspace/airbo/hengage; heroku accounts:set airbo'
 alias soup='cd ~/workspace/soup_tools; heroku accounts:set weilandia'
 
 # Git
@@ -11,8 +12,7 @@ alias gitcm='git c'
 alias gita='git aa'
 
 # Apps
-alias airbo='open https://github.com/theairbo'
 alias github='open https://github.com/weilandia'
-alias chrome='open -a "Google Chrome"'
+alias chrome='open -a "Google Chrome Canary"'
 alias slack='open -a 'Slack''
 alias spotify='open -a 'Spotify''

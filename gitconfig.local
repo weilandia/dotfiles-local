@@ -8,4 +8,4 @@
   email = nickweiland@gmail.com
   username = weilandia
 [core]
-    editor = vim
+  editor = vim
