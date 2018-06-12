@@ -9,3 +9,4 @@
   username = weilandia
 [core]
   editor = vim
+  excludesfile = ~/.gitignore_global
