@@ -1,3 +1,6 @@
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Computer Specific Config
+[[ -f ~/.zshrc.comp_local ]] && source ~/.zshrc.comp_local
