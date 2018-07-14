@@ -1,2 +1,2 @@
 export VISUAL=atom
-export EDITOR=$VISUAL --wait
+export EDITOR='atom --wait'
