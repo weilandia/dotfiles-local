@@ -4,6 +4,7 @@ alias dev='cd ~/workspace'
 alias prac='cd ~/workspace'
 alias airbo='cd ~/workspace/airbo/hengage; source .env'
 alias soup='cd ~/workspace/soup_tools;'
+alias telescope='cd ~/workspace/telescope;'
 alias work='cd ~/workspace/raiseme/raise-ror-webapp; source .env'
 
 # Git
