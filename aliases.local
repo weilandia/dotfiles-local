@@ -13,6 +13,9 @@ alias gitc='git cm'
 alias gitcm='git c'
 alias gita='git aa'
 
+# Ruby
+alias be='bundle exec'
+
 # Apps
 alias github='open https://github.com/weilandia'
 alias chrome='open -a "Google Chrome Canary"'
