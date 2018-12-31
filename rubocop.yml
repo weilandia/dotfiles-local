@@ -1,0 +1,99 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
+  # to ignore them, so only the ones explicitly set in this file are enabled.
+  DisabledByDefault: true
+  Exclude:
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - 'actionpack/lib/action_dispatch/journey/parser.rb'
+    - 'railties/test/fixtures/tmp/**/*'
+    - 'node_modules/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+
+Security:
+  Enabled: true
+
+Bundler:
+  Enabled: true
+
+Lint:
+  Enabled: true
+
+Naming:
+  Enabled: true
+
+Performance:
+  Enabled: true
+
+Metrics:
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/**/*'
+
+Rails:
+  Enabled: true
+
+Style:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/MissingRespondToMissing:
+  Enabled: false
+
+Style/MethodMissingSuper:
+  Enabled: false
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
+Layout:
+  Enabled: true
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+  AutoCorrect: true
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+
+Layout/SpaceInsideBlockBraces:
+  EnforcedStyleForEmptyBraces: space
