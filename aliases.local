@@ -3,14 +3,14 @@ alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
 alias prac='cd ~/workspace'
 alias soup='cd ~/workspace/soup_tools;'
-alias telescope='cd ~/workspace/telescope;'
 alias work='cd ~/workspace/telescope;'
+alias club='open https://app.clubhouse.io/blazar/epics'
 
 # Git
 alias gits='git status -s'
 alias gitc='git cm'
 alias gitcm='git c'
-alias gita='git aa'
+alias gita='git a'
 
 # Ruby
 alias be='bundle exec'
