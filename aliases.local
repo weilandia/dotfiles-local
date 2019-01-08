@@ -10,7 +10,7 @@ alias club='open https://app.clubhouse.io/blazar/epics'
 alias gits='git status -s'
 alias gitc='git cm'
 alias gitcm='git c'
-alias gita='git a'
+alias gita='git add'
 
 # Ruby
 alias be='bundle exec'
