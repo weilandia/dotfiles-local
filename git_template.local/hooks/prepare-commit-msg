@@ -7,13 +7,9 @@ COMMIT_EDITMSG=$1
 
 addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
-  DESCRIPTION=$(git config branch."$NAME".description)
-  echo ":upside_down_face: [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
-  if [ -n "$DESCRIPTION" ]
-  then
-     echo "" >> $COMMIT_EDITMSG
-     echo $DESCRIPTION >> $COMMIT_EDITMSG
-  fi
+  echo ":upside_down_face: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  echo "" >> $COMMIT_EDITMSG
+  echo "[$NAME]" >> $COMMIT_EDITMSG
 }
 
 MERGE=$(cat $COMMIT_EDITMSG|grep -i 'merge'|wc -l)
