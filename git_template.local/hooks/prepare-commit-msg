@@ -7,7 +7,7 @@ COMMIT_EDITMSG=$1
 
 addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
-  echo ":surfing_man: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  echo ":palm_tree: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
   echo "" >> $COMMIT_EDITMSG
   echo "[$NAME]" >> $COMMIT_EDITMSG
 }
