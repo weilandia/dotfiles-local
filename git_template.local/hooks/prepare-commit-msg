@@ -6,16 +6,17 @@
 COMMIT_EDITMSG=$1
 
 commitEmoji() {
-  h=$(date +%H)
-  echo $h
+  HOUR=$(date +%H)
 
-  if [$h -lt 5] ; then
+  echo $HOUR < 5
+
+  if (($HOUR < 5)) ; then
     echo ":sleeping:"
-  elif [$h -lt 11] ; then
+  elif [$HOUR -lt 11] ; then
     echo ":coffee:"
-  elif [$h -lt 15] ; then
+  elif [$HOUR -lt 15] ; then
     echo ":surfer:"
-  elif [$h -lt 21] ; then
+  elif [$HOUR -lt 21] ; then
     echo ":tada:"
   else
     echo ":new_moon_with_face:"
