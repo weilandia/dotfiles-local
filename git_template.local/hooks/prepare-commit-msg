@@ -26,6 +26,7 @@ addBranchName() {
   DESCRIPTION=$(git config branch."$NAME".description)
   EMOJI=$(commitEmoji)
   echo "$EMOJI $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  echo "" >> $COMMIT_EDITMSG
   echo "[$NAME]"  >> $COMMIT_EDITMSG
 
   if [ -n "$DESCRIPTION" ]
