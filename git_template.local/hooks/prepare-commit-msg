@@ -33,7 +33,7 @@ addBranchName() {
 }
 
 MERGE=$(cat $COMMIT_EDITMSG|grep -i 'merge'|wc -l)
-echo commitEmoji
+commitEmoji
 if [ $MERGE -eq 0 ] ; then
   addBranchName
 fi
