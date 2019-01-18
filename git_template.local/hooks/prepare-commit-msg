@@ -14,7 +14,7 @@ commitEmoji() {
     echo ":coffee:"
   elif (($HOUR < 15)); then
     echo ":surfer:"
-  elif (($HOUR < 15)); then
+  elif (($HOUR < 22)); then
     echo ":tada:"
   else
     echo ":new_moon_with_face:"
@@ -25,8 +25,7 @@ addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
   DESCRIPTION=$(git config branch."$NAME".description)
   EMOJI=$(commitEmoji)
-  echo "$EMOJI $(cat $COMMIT_EDITMSG)\n [$NAME]" > $COMMIT_EDITMSG
-
+  echo "$EMOJI [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
   if [ -n "$DESCRIPTION" ]
   then
      echo "" >> $COMMIT_EDITMSG
