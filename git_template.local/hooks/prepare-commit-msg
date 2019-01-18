@@ -8,13 +8,13 @@ COMMIT_EDITMSG=$1
 commitEmoji() {
   h=$(date +%H)
 
-  if [h -lt 5]; then
+  if [$h -lt 5]; then
     echo ":sleeping:"
-  elif [h -lt 11]; then
+  elif [$h -lt 11]; then
     echo ":coffee:"
-  elif [h -lt 15]; then
+  elif [$h -lt 15]; then
     echo ":surfer:"
-  elif [h -lt 21]; then
+  elif [$h -lt 21]; then
     echo ":tada:"
   else
     echo ":new_moon_with_face:"
