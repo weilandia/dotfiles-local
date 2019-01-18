@@ -8,9 +8,7 @@ COMMIT_EDITMSG=$1
 commitEmoji() {
   HOUR=$(date +%H)
 
-  echo $HOUR < 5
-
-  if (($HOUR < 5)) ; then
+  if (($HOUR < 24)) ; then
     echo ":sleeping:"
   elif [$HOUR -lt 11] ; then
     echo ":coffee:"
