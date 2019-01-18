@@ -32,6 +32,9 @@ addBranchName() {
   if [ -n "$DESCRIPTION" ]
   then
      echo "" >> $COMMIT_EDITMSG
+
+
+     
      echo $DESCRIPTION >> $COMMIT_EDITMSG
   fi
 }
