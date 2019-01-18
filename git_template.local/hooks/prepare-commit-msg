@@ -21,10 +21,13 @@ commit_emoji() {
   fi
 }
 
+
+
 addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
   DESCRIPTION=$(git config branch."$NAME".description)
-  echo ":tada: [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  EMOJI=$(commit_emoji())
+  echo "$EMOJI [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
   if [ -n "$DESCRIPTION" ]
   then
      echo "" >> $COMMIT_EDITMSG
