@@ -8,13 +8,13 @@ COMMIT_EDITMSG=$1
 commitEmoji() {
   HOUR=$(date +%H)
 
-  if (($HOUR < 24)) ; then
+  if (($HOUR < 5)) ; then
     echo ":sleeping:"
-  elif [$HOUR -lt 11] ; then
+  elif (($HOUR < 11)) ; then
     echo ":coffee:"
-  elif [$HOUR -lt 15] ; then
+  elif (($HOUR < 15)) ; then
     echo ":surfer:"
-  elif [$HOUR -lt 21] ; then
+  elif (($HOUR < 22)) ; then
     echo ":tada:"
   else
     echo ":new_moon_with_face:"
@@ -24,7 +24,8 @@ commitEmoji() {
 addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
   DESCRIPTION=$(git config branch."$NAME".description)
-  echo "[$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  EMOJI=$(commitEmoji)
+  echo "$EMOJI [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
   if [ -n "$DESCRIPTION" ]
   then
      echo "" >> $COMMIT_EDITMSG
@@ -33,7 +34,6 @@ addBranchName() {
 }
 
 MERGE=$(cat $COMMIT_EDITMSG|grep -i 'merge'|wc -l)
-commitEmoji
 if [ $MERGE -eq 0 ] ; then
   addBranchName
 fi
