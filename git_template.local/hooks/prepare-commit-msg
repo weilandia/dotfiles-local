@@ -5,7 +5,7 @@
 
 COMMIT_EDITMSG=$1
 
-commit_emoji() {
+commitEmoji() {
   h=$(date +%H)
 
   if [h -lt 5]; then
@@ -21,13 +21,10 @@ commit_emoji() {
   fi
 }
 
-
-
 addBranchName() {
   NAME=$(git branch | grep '*' | sed 's/* //')
   DESCRIPTION=$(git config branch."$NAME".description)
-  EMOJI=commit_emoji
-  echo "$EMOJI [$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
+  echo "[$NAME]: $(cat $COMMIT_EDITMSG)" > $COMMIT_EDITMSG
   if [ -n "$DESCRIPTION" ]
   then
      echo "" >> $COMMIT_EDITMSG
@@ -36,7 +33,7 @@ addBranchName() {
 }
 
 MERGE=$(cat $COMMIT_EDITMSG|grep -i 'merge'|wc -l)
-
+echo commitEmoji
 if [ $MERGE -eq 0 ] ; then
   addBranchName
 fi
