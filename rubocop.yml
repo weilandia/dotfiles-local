@@ -67,9 +67,6 @@ Style/WordArray:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
-
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
