@@ -6,7 +6,7 @@
 COMMIT_EDITMSG=$1
 
 commitEmoji() {
-  HOUR=$(date +%H)
+  HOUR=$(date +%-H)
 
   if (($HOUR < 5)); then
     echo ":sleeping:"
