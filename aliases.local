@@ -2,9 +2,8 @@
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
 alias prac='cd ~/workspace'
-alias soup='cd ~/workspace/soup_tools;'
-alias work='cd ~/workspace/telescope;'
-alias club='open https://app.clubhouse.io/blazar/epics'
+alias soup='cd ~/workspace/blazar/soup_tools;'
+alias work='cd ~/workspace/blazar/telescope;'
 
 # Git
 alias gits='git status -s'
@@ -17,6 +16,6 @@ alias be='bundle exec'
 
 # Apps
 alias github='open https://github.com/weilandia'
-alias chrome='open -a "Google Chrome Canary"'
-alias slack='open -a 'Slack''
-alias spotify='open -a 'Spotify''
+alias chrome='open -a "Google Chrome"'
+alias slack='open -a "Slack"'
+alias spotify='open -a "Spotify"'
