@@ -24,9 +24,6 @@ Lint:
 Naming:
   Enabled: true
 
-Performance:
-  Enabled: true
-
 Metrics:
   Enabled: true
 
@@ -36,9 +33,6 @@ Metrics/LineLength:
 Metrics/BlockLength:
   Exclude:
     - 'config/environments/**/*'
-
-Rails:
-  Enabled: true
 
 Style:
   Enabled: true
@@ -90,7 +84,7 @@ Layout/EndAlignment:
   AutoCorrect: true
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 Layout/SpaceInsideBlockBraces:
   EnforcedStyleForEmptyBraces: space

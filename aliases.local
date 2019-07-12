@@ -2,8 +2,8 @@
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
 alias prac='cd ~/workspace'
-alias soup='cd ~/workspace/blazar/soup_tools;'
-alias work='cd ~/workspace/blazar/telescope;'
+alias soup='cd ~/workspace/govly/soup_tools;'
+alias work='cd ~/workspace/govly/telescope;'
 
 # Git
 alias gits='git status -s'
