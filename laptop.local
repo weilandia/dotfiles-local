@@ -12,13 +12,15 @@ cask "ngrok"
 cask "pg-commander"
 cask "chromedriver"
 cask "pdftotext"
-cask "adoptopenjdk8"
 cask "spectacle"
 
+brew "antiword"
+brew "gnumeric"
 brew "go"
 brew "mongodb"
-brew "elasticsearch"
 brew "geckodriver"
+tap "elastic/tap"
+brew "elastic/tap/elasticsearch-full"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
