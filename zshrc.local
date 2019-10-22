@@ -7,3 +7,4 @@ export PATH="$(yarn global bin):$PATH"
 [[ -f ~/.zshrc.comp_local ]] && source ~/.zshrc.comp_local
 
 export PATH="$HOME/.bin:$PATH"
+source ~/.asdf/asdf.sh
