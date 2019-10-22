@@ -1,0 +1,105 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.source.ruby':
+  'test block':
+    'prefix': 'test'
+    'body': """
+      test "${1:test_description}" do
+        ${2}
+      end
+    """
+  'else block':
+    'prefix': 'else'
+    'body': """
+      else
+        ${1}
+      end
+    """
+  '# frozen_string_literal: true':
+    'prefix': 'frozen'
+    'body': '# frozen_string_literal: true\n\n'
+  'class':
+    'prefix': 'class'
+    'body': """
+      class ${1}
+        ${2}
+      end
+    """
+  'require test_helper':
+    'prefix': 'test_helper'
+    'body': """
+      require "test_helper"
+      class ${1} < ActiveSupport::TestCase
+        def setup
+          ${2}
+        end
+      end
+    """
+'.source.js':
+  'react':
+    'prefix': 'react'
+    'body': """
+      // libraries
+      import React from 'react';
+      import PropTypes from 'prop-types';
+
+      const propTypes = {
+
+      };
+
+      const defaultProps = {
+
+      };
+
+      const ${1} = () => {
+      };
+
+      ${1}.propTypes = propTypes;
+      ${1}.defaultProps = defaultProps;
+
+      export default ${1};
+
+    """
+  'redux':
+    'prefix': 'redux'
+    'body': """
+      // libraries
+      import { connect } from 'react-redux';
+      import { bindActionCreators } from 'redux';
+
+      // ${1}
+      import ${1} from './${1}';
+
+      const mapDispatchToProps = dispatch =>
+        bindActionCreators(
+          {},
+          dispatch
+        );
+
+      const mapStateToProps = ({}) => ({});
+
+      export default connect(
+        mapStateToProps,
+        mapDispatchToProps
+      )(${1});
+
+      """

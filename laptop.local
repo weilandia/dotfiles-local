@@ -26,6 +26,8 @@ brew cleanup
 brew cask cleanup
 heroku plugins:install heroku-accounts
 apm install --packages-file ~/dotfiles-local/apm_package_list.txt
+cp ~/.atom_config.cson ~/.atom/config.cson
+cp ~/.atom_snippets.cson ~/.atom/snippets.cson
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."

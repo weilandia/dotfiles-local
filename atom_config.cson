@@ -1,0 +1,28 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "d76f18a5-4f33-46a0-88eb-d8138ee03e5e"
+  autosave:
+    enabled: true
+  core:
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Monaco, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "b3c17dc5-1386-4d71-90d4-1ef9c1ae3649"
+  github:
+    automaticCommitMessageWrapping: false
+  "linter-stylelint":
+    disableWhenNoConfig: false
+    useStandard: true
+  "linter-ui-default":
+    showPanel: true
+  "ruby-block":
+    highlightLineNumber: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
