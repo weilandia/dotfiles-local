@@ -1,10 +1,7 @@
 # Nav
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
-alias prac='cd ~/workspace'
-alias soup='cd ~/workspace/govly/soup_tools;'
 alias work='cd ~/workspace/govly/telescope;'
-alias uol='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/uol;'
 
 # Git
 alias gits='git status -s'
@@ -18,5 +15,7 @@ alias be='bundle exec'
 # Apps
 alias github='open https://github.com/weilandia'
 alias chrome='open -a "Google Chrome"'
-alias slack='open -a "Slack"'
 alias spotify='open -a "Spotify"'
+
+# AWS
+alias aws='docker pull amazon/aws-cli:latest && docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
