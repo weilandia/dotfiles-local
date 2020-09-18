@@ -18,4 +18,5 @@ alias chrome='open -a "Google Chrome"'
 alias spotify='open -a "Spotify"'
 
 # AWS
-alias aws='docker pull amazon/aws-cli:latest && docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
+alias awspull='docker pull amazon/aws-cli:latest'
+alias aws='docker run --rm -it -v ~/.aws/credentials:/root/.aws/credentials -v $(pwd):/aws amazon/aws-cli'
