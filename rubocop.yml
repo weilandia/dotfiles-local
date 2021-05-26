@@ -1,16 +1,21 @@
+require:
+  - rubocop-performance
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.0
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
   DisabledByDefault: true
   Exclude:
-    - '**/templates/**/*'
-    - '**/vendor/**/*'
-    - 'actionpack/lib/action_dispatch/journey/parser.rb'
-    - 'railties/test/fixtures/tmp/**/*'
-    - 'node_modules/**/*'
-    - 'db/**/*'
-    - 'bin/**/*'
+    - "**/templates/**/*"
+    - "**/vendor/**/*"
+    - "actionpack/lib/action_dispatch/journey/parser.rb"
+    - "railties/test/fixtures/tmp/**/*"
+    - "node_modules/**/*"
+    - "db/**/*"
+    - "config/routes.rb"
+    - "bin/**/*"
+    - "app/views/**/*"
+    - "app/test/**/*"
 
 Security:
   Enabled: true
@@ -24,32 +29,48 @@ Lint:
 Naming:
   Enabled: true
 
-Metrics:
+Performance:
   Enabled: true
-
-Metrics/LineLength:
-  Enabled: false
-
-Metrics/BlockLength:
-  Exclude:
-    - 'config/environments/**/*'
 
 Style:
   Enabled: true
 
+Layout:
+  Enabled: true
+
+Metrics:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 23
+  Exclude:
+    - "app/mailers/api/**/*"
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 125
+  Enabled: true
+  Exclude:
+    - "test/**/*"
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - "config/environments/**/*"
+    - "test/**/*"
+
 Style/ConditionalAssignment:
   Enabled: false
 
-Style/Documentation:
-  Enabled: false
-
-Style/RedundantBegin:
-  Enabled: false
-
-Style/MissingRespondToMissing:
-  Enabled: false
-
-Style/MethodMissingSuper:
+Style/DoubleNegation:
   Enabled: false
 
 Style/SymbolArray:
@@ -61,8 +82,11 @@ Style/WordArray:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
@@ -76,8 +100,8 @@ Style/RedundantReturn:
 Style/Semicolon:
   AllowAsExpressionSeparator: true
 
-Layout:
-  Enabled: true
+Layout/LineLength:
+  Enabled: false
 
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
@@ -88,3 +112,12 @@ Layout/IndentationConsistency:
 
 Layout/SpaceInsideBlockBraces:
   EnforcedStyleForEmptyBraces: space
+
+Lint/MissingSuper:
+  Enabled: false
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
+Style/SingleArgumentDig:
+  Enabled: false

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+asdf plugin update ruby
+asdf plugin update nodejs
+
+asdf install ruby
+asdf install nodejs

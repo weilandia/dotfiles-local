@@ -1,7 +1,6 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
-cask "whatsapp"
 cask "spotify"
 cask "iterm2"
 cask "google-chrome"
@@ -10,7 +9,6 @@ cask "firefox"
 cask "ngrok"
 cask "pg-commander"
 cask "chromedriver"
-cask "spectacle"
 cask "docker"
 
 brew "poppler"
@@ -18,6 +16,7 @@ brew "antiword"
 brew "gnumeric"
 brew "postgres"
 brew "geckodriver"
+brew "buildpacks/tap/pack"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."

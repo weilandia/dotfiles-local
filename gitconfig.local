@@ -10,5 +10,7 @@
   email = nickweiland@gmail.com
   username = weilandia
 [core]
-  editor = vim
+  editor = atom
   excludesfile = ~/.gitignore_global
+[includeIf "gitdir:~/workspace/osu"]
+  path = .gitconfig.osu

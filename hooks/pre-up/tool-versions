@@ -1,0 +1,5 @@
+#!/bin/sh
+
+RUBY=$(asdf latest ruby)
+NODE=$(asdf latest nodejs)
+echo "ruby $RUBY\nnodejs $NODE" > '../../tool-versions'

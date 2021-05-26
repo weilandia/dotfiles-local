@@ -1,8 +1,8 @@
 # Nav
 alias dotfiles='cd ~/dotfiles-local'
 alias dev='cd ~/workspace'
-alias work='cd ~/workspace/govly/telescope;'
-alias osu='cd ~/workspace/osu;'
+alias work='cd ~/workspace/govly/govly;'
+alias osu='cd ~/workspace/osu/cs261;'
 
 # Git
 alias gits='git status -s'
@@ -11,7 +11,7 @@ alias gitcm='git c'
 alias gita='git add'
 
 # Python
-alias py=/usr/local/bin/python3
+alias py=/usr/bin/python3
 
 # Ruby
 alias be='bundle exec'
@@ -20,7 +20,3 @@ alias be='bundle exec'
 alias github='open https://github.com/weilandia'
 alias chrome='open -a "Google Chrome"'
 alias spotify='open -a "Spotify"'
-
-# AWS
-alias awspull='docker pull amazon/aws-cli:latest'
-alias aws='docker run --rm -it -v ~/.aws/credentials:/root/.aws/credentials -v $(pwd):/aws amazon/aws-cli'
